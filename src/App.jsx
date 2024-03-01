@@ -1,5 +1,4 @@
 import "./App.css";
-import Button from "./components/Button";
 import Xeditor from "./components/Xeditor";
 
 function App() {

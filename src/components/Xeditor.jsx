@@ -42,32 +42,6 @@ export default function Xeditor() {
     return block;
   }
 
-  function onSelection(editorState) {
-    let selectionState = editorState.getSelection();
-
-    let anchorKey = selectionState.getAnchorKey();
-    let focusKey = selectionState.getFocusKey();
-
-    console.log(anchorKey, focusKey);
-
-    let currentContent = editorState.getCurrentContent();
-    let currentContentBlock = currentContent.getBlockForKey(anchorKey);
-
-    return new SelectionState({
-      anchorKey: anchorKey,
-      anchorOffset: 0,
-      focusKey: focusKey,
-      focusOffset: currentContentBlock.getLength() - 1,
-    });
-
-    let start = selectionState.getStartOffset();
-    let end = selectionState.getEndOffset();
-    console.log(start, end);
-
-    let selectedText = currentContentBlock.getText().slice(start, end);
-    console.log(selectedText);
-  }
-
   function removeBlockText(key, editorState, start, end) {
     const currentContent = editorState.getCurrentContent();
 
@@ -228,7 +202,7 @@ export default function Xeditor() {
     <div className="h-full space-y-2">
       <div className="flex justify- py-3 items-center">
         <div className="grow">
-          <h1 className="text-xl font-semibold text-center">Title</h1>
+          <h1 className="text-xl font-semibold text-center">Demo editor by Eshant</h1>
         </div>
         <div>
           <Button onClick={onSave} disabled={saved}>
