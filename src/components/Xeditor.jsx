@@ -206,7 +206,7 @@ export default function Xeditor() {
         </div>
         <div>
           <Button onClick={onSave} disabled={saved}>
-            Save
+            {saved ? "Save" : "Saved"}
           </Button>
         </div>
       </div>
