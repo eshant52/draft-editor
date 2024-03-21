@@ -6,7 +6,7 @@ Note - This is in development progress.
 
 ## Specification
 
-![screenshot](./demo.png)
+![screenshot](demo.png)
 
 1. Enter \# and space -> heading block
 1. Enter \* and space -> bold line
