@@ -1,8 +1,31 @@
-# React + Vite
+# Note draft editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple react based editor application using draft js library.
 
-Currently, two official plugins are available:
+Note - This is in development progress.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Specification
+
+![screenshot](./demo.png)
+
+1. Enter \# and space -> heading block
+1. Enter \* and space -> bold line
+1. Enter \*\* and space -> red line
+1. Enter \*\*\* and space -> under line
+1. Save button will save your text into localstorage
+
+## Requirements
+
+- Nodejs  v14+ (<https://nodejs.org/>)
+
+## Installation
+
+NOTE - You can clone this repository locally or fork this project by using [codesandbox repo link](https://codesandbox.io/p/github/eshant52/draft-editor/draft/determined-gagarin)
+
+1. clone the repo
+1. then do following command to run in dev
+
+```bash
+npm install
+npm run dev
+```
